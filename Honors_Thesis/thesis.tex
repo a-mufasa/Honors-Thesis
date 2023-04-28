@@ -1,0 +1,50 @@
+\documentclass{uark}
+
+%recommended packages
+\usepackage{amsmath} %better math handling
+\usepackage{mathcomp} %don't remember why I include this
+\usepackage{graphicx} %used for figures
+\usepackage[version=3]{mhchem} %used for chemical formulas, in text and in eq.
+\usepackage{siunitx} %used to easily format numbers with units, including greek
+
+\usepackage{subfig}
+\usepackage{csquotes}
+\usepackage{float}
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+%FRONT MATTER
+\include{Honors_Thesis/Chapters/0-front_matter}
+
+%BODY
+%The point of including each chapter is because once the chapters get filled up it takes a while to execute the whole file. This way, you can comment out each file except the one you are working on to save compile time when checking.
+\include{Honors_Thesis/Chapters/1-Introduction}
+
+\include{Honors_Thesis/Chapters/2-Related}
+
+\include{Honors_Thesis/Chapters/3-Background}
+
+\include{Honors_Thesis/Chapters/4-Implementation}
+
+\include{Honors_Thesis/Chapters/5-Conclusion}
+
+%bibliography is last chapter, before appendices
+%use \nocite{} to put refs in bib that did not appear in the thesis
+
+\chapter{Publications}
+
+
+\textbf{\textit{CONDA: Continual Unsupervised Domain Adaptation Learning in  Semantic Scene Understanding}} (WACV 2023 - Submitted).
+
+
+\bibliography{Honors_Thesis/thesis}
+
+
+%BACK MATTER/APPENDICES
+\appendix
+
+%back matter are the microEP appendices
+\include{Honors_Thesis/Chapters/6-back_matter}
+
+\end{document}
