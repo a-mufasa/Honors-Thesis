@@ -1,6 +1,7 @@
 # Honors-Thesis
 
-This repository contains my Honors Thesis and presentation. 
+This repository contains my Honors Thesis, presentation, and demo. For the publication, please visit:
+https://scholarworks.uark.edu/csceuht/127/
 
 Below is a short demo video of the Insect Detecton Server created as part of my Undergraduate Research:
 
